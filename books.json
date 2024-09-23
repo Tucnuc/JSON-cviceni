@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "title": "Tales of the Frost Giants",
+      "author": "R.K. Frostbeard",
+      "isbn": "5-721-37482-8",
+      "status": "Available"
+    },
+    {
+      "title": "The Wizard's Grimoire",
+      "author": "B.N. Spellweaver",
+      "isbn": "2-664-84930-9",
+      "status": "Borrowed"
+    },
+    {
+      "title": "History of the Empire",
+      "author": "A.R. Tolkien",
+      "isbn": "8-384-93823-6",
+      "status": "Available"
+    },
+    {
+      "title": "The Dragon's Tale",
+      "author": "L.R. Silverleaf",
+      "isbn": "4-926-83752-1",
+      "status": "Available"
+    }
+  ]
+}
