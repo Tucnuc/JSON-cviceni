@@ -4,14 +4,19 @@ import json
 with open('books.json') as f:
     data = json.load(f)
 
-# Počet znaků JSON
+# Počet znaků, slov, řádků v JSON
 pocetZnaku = 0
+pocetSlov = 0
+
 for book in data['books']:
     for klic, hodnota in book.items():
+        pocetSlov += 2
         pocetZnaku += len(str(klic)) + len(str(hodnota))
 
 print(f"\nCelkový počet znaků: {len(str(data))}")
-print(f"Počet znaků pouze hodnot a klíčů: {pocetZnaku}\n")
+print(f"Počet znaků pouze hodnot a klíčů: {pocetZnaku}")
+print(f"Počet slov (klíče a hodnoty): {pocetSlov}")
+print(f"Celkový počet řádků: {json.dumps(data, indent=2).count('\n') + 1}\n")
 
 # Print JSON souboru
 for book in data['books']:
